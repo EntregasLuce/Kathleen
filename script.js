@@ -74,7 +74,7 @@ async function loadHeroVideoFromCloudinary() {
     const heroVideoElement = document.getElementById('hero-video-bg');
     if (heroVideoElement) {
         // Asegurar que el video pre-cargado empiece a reproducirse de inmediato
-        heroVideoElement.play().catch(() => {});
+        heroVideoElement.play().catch(() => { });
     }
 
     try {
@@ -271,9 +271,9 @@ function sendToWhatsApp() {
         return;
     }
 
-    const message = `¡Hola Carlos! Confirmamos nuestra asistencia(Boda Kathleen & Jair).\n\nNombre/Grupo: ${nombre}\nTotal personas: ${asistentes}\nAlergias/Med: ${alergias}\nCantidad de niños: ${ninos}`;
+    const message = `¡Hola! Confirmamos nuestra asistencia(Boda Kathleen & Yair).\n\nNombre/Grupo: ${nombre}\nTotal personas: ${asistentes}\nAlergias/Med: ${alergias}\nCantidad de niños: ${ninos}`;
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/573233734446?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/573151201339?text=${encodedMessage}`, '_blank');
     toggleModal();
 }
 
